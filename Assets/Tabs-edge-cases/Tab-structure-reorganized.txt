@@ -1,128 +1,130 @@
-⁃ Content[tab]
-	⁃ Page Name [text field]
-	⁃ Navigation label [text field]
-	⁃ Content [tiny mce]
+⁃ Edit content[Top nav item]
+	- Main content [tab]
+		⁃ Page Name [text field]
+		⁃ Navigation label [text field]
+		⁃ Content [tiny mce]
 	
-	- Metadata[accordion]
+	- Metadata[tab]
 		⁃ Url [text field]
 		⁃ Title [text field]
 		⁃ Description [text area]
 		⁃ Keywords [text area]
 		⁃ Custom metatags [text area]
-				
-	- Right column[accordion]
-		⁃ Html widget [tiny mce]
-				
-	- Related video[accordion]
-		⁃ related video [combobox]
-				
-	- Flickr photos[accordion]
-		⁃ Page name [datagrid]
-		
-	⁃ Banner [accordion]
-		⁃ title
-		⁃ link
-		⁃ files [datagrid]
-		
-	⁃ Time to [accordion]
-		⁃ [datagrid]
-		
-	⁃ Most popular [accordion]
-		⁃ [datagrid]
-		
-	⁃ Kitchen table [accordion]
-		⁃ [datagrid]
-		
-	⁃ Blog [accordion]
-		⁃ Blog image [file uploader]
-		- Blog caption [text field]
-		- Link [text field]
-		- turn off [checkbox]
-		- title [txt box]
-		- Content [tiny mce]
+	
+	- Content snipets[tab]			
+		- Right column[accordion]
+			⁃ Html widget [tiny mce]
+					
+		- Related video[accordion]
+			⁃ related video [combobox]
+					
+		- Flickr photos[accordion]
+			⁃ Page name [datagrid]
 			
-	⁃ Shop [accordion]
-		- Link [text field]
-		- image [file uploader]
+		⁃ Banner [accordion]
+			⁃ title
+			⁃ link
+			⁃ files [datagrid]
+			
+		⁃ Time to [accordion]
+			⁃ [datagrid]
+			
+		⁃ Most popular [accordion]
+			⁃ [datagrid]
+			
+		⁃ Kitchen table [accordion]
+			⁃ [datagrid]
+			
+		⁃ Blog [accordion]
+			⁃ Blog image [file uploader]
+			- Blog caption [text field]
+			- Link [text field]
+			- turn off [checkbox]
+			- title [txt box]
+			- Content [tiny mce]
+				
+		⁃ Shop [accordion]
+			- Link [text field]
+			- image [file uploader]
+			
+		⁃ Guys we love [accordion]
+			- Caption [textbox]
+			- Link to page [textbox]
+			- Open in a new window [checkbox]
+			- Image [File uploader]
+			- Title image [File uploader]
+			- More image [File uploader]
+			- Quote [tiny mce]
+			
+		⁃ Kiva [accordion]
+			- Caption [textbox]
+			- Link to page [textbox]
+			- Open in a new window [checkbox]
+			- Image [File uploader]
+			- Title image [File uploader]
+			- More image [File uploader]
+			- Content [tiny mce]
+			
+		⁃ Partners [accordion]
+			- Top left title [textbox]
+			- Top left link [textbox]
+			- Top left Content [tiny mce]
+			- Top left image [File uploader]
+			- Top right title [textbox]
+			- Top right link [textbox]
+			- Top right Content [tiny mce]
+			- Top right image [File uploader]
+			- Bottom left title [textbox]
+			- Bottom left link [textbox]
+			- Bottom left Content [tiny mce]
+			- Bottom left image [File uploader]
+			- Bottom right title [textbox]
+			- Bottom right link [textbox]
+			- Bottom right Content [tiny mce]
+			- Bottom right image [File uploader]
+			
+		⁃ What we do [accordion]
+			- Image [File uploader] * 10
+			
+		⁃ Social networks [accordion]
+			- Link [Textfield] * 10
+			
+		- Media [accordion]
+			- Video embed code [text area]
+			- Video caption [textfield]
+			- Photo for the blog [file uploader]
+			- Caption [textfield]
+			
+		- Sponsor [accordion]
+			- Link [Textfield]
+			- File [Textfield]
+			- Is this a flash movie [Textfield]
+			- flash height [Textfield]
+			- flash width [Textfield]
 		
-	⁃ Guys we love [accordion]
-		- Caption [textbox]
-		- Link to page [textbox]
-		- Open in a new window [checkbox]
-		- Image [File uploader]
-		- Title image [File uploader]
-		- More image [File uploader]
-		- Quote [tiny mce]
+		- Sponsors [accordion]
+			- Sponsor title [textbox]
+			- Sponsor Link [textbox]
+			- Sponsor logo [File uploader]
+			- open in a new window [checkbox]
+			- Sponsor title [textbox]
+			- Sponsor Link [textbox]
+			- Sponsor logo [File uploader]
+			- open in a new window [checkbox]
+			- Sponsor title [textbox]
+			- Sponsor Link [textbox]
+			- Sponsor logo [File uploader]
+			- open in a new window [checkbox]
+			- Sponsor title [textbox]
+			- Sponsor Link [textbox]
+			- Sponsor logo [File uploader]
+			- open in a new window [checkbox]
 		
-	⁃ Kiva [accordion]
-		- Caption [textbox]
-		- Link to page [textbox]
-		- Open in a new window [checkbox]
-		- Image [File uploader]
-		- Title image [File uploader]
-		- More image [File uploader]
-		- Content [tiny mce]
-		
-	⁃ Partners [accordion]
-		- Top left title [textbox]
-		- Top left link [textbox]
-		- Top left Content [tiny mce]
-		- Top left image [File uploader]
-		- Top right title [textbox]
-		- Top right link [textbox]
-		- Top right Content [tiny mce]
-		- Top right image [File uploader]
-		- Bottom left title [textbox]
-		- Bottom left link [textbox]
-		- Bottom left Content [tiny mce]
-		- Bottom left image [File uploader]
-		- Bottom right title [textbox]
-		- Bottom right link [textbox]
-		- Bottom right Content [tiny mce]
-		- Bottom right image [File uploader]
-		
-	⁃ What we do [accordion]
-		- Image [File uploader] * 10
-		
-	⁃ Social networks [accordion]
-		- Link [Textfield] * 10
-		
-	- Media [accordion]
-		- Video embed code [text area]
-		- Video caption [textfield]
-		- Photo for the blog [file uploader]
-		- Caption [textfield]
-		
-	- Sponsor [accordion]
-		- Link [Textfield]
-		- File [Textfield]
-		- Is this a flash movie [Textfield]
-		- flash height [Textfield]
-		- flash width [Textfield]
-	
-	- Sponsors [accordion]
-		- Sponsor title [textbox]
-		- Sponsor Link [textbox]
-		- Sponsor logo [File uploader]
-		- open in a new window [checkbox]
-		- Sponsor title [textbox]
-		- Sponsor Link [textbox]
-		- Sponsor logo [File uploader]
-		- open in a new window [checkbox]
-		- Sponsor title [textbox]
-		- Sponsor Link [textbox]
-		- Sponsor logo [File uploader]
-		- open in a new window [checkbox]
-		- Sponsor title [textbox]
-		- Sponsor Link [textbox]
-		- Sponsor logo [File uploader]
-		- open in a new window [checkbox]
-	
-	- Tips [accordion]
-		- xml file [File uploader]
+		- Tips [accordion]
+			- xml file [File uploader]
 
 		
-⁃ Page settings [tab]
+⁃ Page settings [Top nav item]
 	- Page type [combobox]
 	- Show in menus [checkbox]
 	- Show in search [checkbox]
@@ -138,7 +140,7 @@
 		- who can edit this ? [checkbox * 2]
 
 
-- Reports [tab]
+- Reports [Top nav item]
 	- link to this page [datagrid]
 		
 		
