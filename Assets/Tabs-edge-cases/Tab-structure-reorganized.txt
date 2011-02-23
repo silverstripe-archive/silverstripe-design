@@ -1,7 +1,7 @@
 ⁃ Edit content[Top nav item]
 	- Main content [tab]
-		⁃ Page Name [text field]
 		⁃ Navigation label [text field]
+                ⁃ Page Name [text field]
 		⁃ Content [tiny mce]
 	
 	- Metadata[tab]
