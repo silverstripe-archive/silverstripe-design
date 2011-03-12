@@ -1,0 +1,28 @@
+/**
+ * SilverStripe Form Library
+ *
+ * Provides a simple library of form styles for the built in form library.
+ *
+ * @package sapphire
+ * @subpackage css
+ */
+
+@mixin hide-element {
+	position: absolute; overflow: hidden;
+	height: 1px; width: 1px; 
+	clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+}
+
+/**
+ * Hide a legend on the form. The class will be attached to the fieldset
+ * and not the legend so alterations can be made easily to the fieldset
+ */
+.hide-legend {}
+	.hide-legend legend {
+		@include hide-element;
+	}
+
+/**
+ * Layout
+ */
+

@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SilverStripe 3.0 Form HTML and CSS</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="form-demo.css">
+</head>
+
+<body>
+	
+	<h1>SilverStripe 3.0 Form HTML and CSS</h1>
+	
+	<h2>Introduction</h2>
+	<p>This page contains the new form html and css styles for the core sapphire form
+	library.</p>
+
+	<p>The purpose of this library is to provide a minimal set of styles and markup (enough for
+	most sites) and allow developers which need more specific templates, to customize the 
+	form templates as much as they wish using separate templates</p>
+	
+	<h2>Notes</h2>
+	<p>New policies around the form framework:</p>
+	
+	<ul>
+		<li>Each form field still has it's own ID. This is since <code>label</code> tags require id 
+			tags for the <code>for</code> attribute. Using the <code>for</code> attribute allows users
+		 	to focus the on the input tag by clicking the form field.</li>
+			
+		<li>All id and class name attributes are lowercase-with dashes to ensure pages follow 
+			our CSS guidelines.</li>
+			
+		<li>A form can contain multiple <code>fieldsets</code>. Each <code>fieldset</code> requires a 
+			<code>legend</code> tag in the source. To remove the legend add a class of <code>hide-legend</code>.
+			to the fieldset. <a href="#example-no-legend">Example: No Legend</a>.
+		</li>
+		
+		<li>Each fieldset uses a <code>div</code> to markup the container. This is
+			the most agnostic way to categorize field holders. Using an <code>ol</code> could be purposeful
+			but the semantics of some forms would not warrant a list. Some form fields (optionset fields) 
+			are marked up as a list since this makes practical and semantic sense.</li>
+			
+	</ul>
+	
+	<h2>A simple form example</h2>
+	
+	<form id="form-id">
+		<fieldset>
+			<legend>Simple Form with Legend</legend>
+			
+			<!-- TextField -->
+			<div class="field text">
+				<label for="form-id-text-01">Input</label>
+				<input type="text" name="text-01" id="form-id-text-01" />
+			</div>
+			
+			<!-- CheckboxField -->
+			<div class="field checkbox">
+				<label for="form-id-checkbox-01">Checkbox</label>
+				<input type="checkbox" name="checkbox-01" id="form-id-checkbox-01" />
+			</div>
+			
+			<div class="field checkbox">
+				<label for="form-id-checkbox-02" class="label-right">Checkbox (right label)</label>
+				<input type="checkbox" name="checkbox-02" id="form-id-checkbox-02">
+			</div>
+			
+			<!-- DropdownField -->
+			<div class="field select">
+				<label for="form-id-select-02">Select box</label>
+				<select>
+					<optgroup label="Example">
+						<option>Foo</option>
+						<option>Bar</option>
+						<option>Baz</option>
+					</optgroup>
+					
+					<optgroup label="Example Two">
+						<option>Foo</option>
+						<option>Bar</option>
+						<option>Baz</option>
+					</optgroup>
+				</select>
+			</div>
+			
+			<!-- CheckboxSetField -->
+			<div class="field checkboxset">
+				<label for="form-id-checkboxset-01">Checkbox Set</label>
+				
+				<ul id="form-id-checkboxset-01" class="optionset">
+					<li>
+						<label for="form-id-checkboxset-01-option-01">Foo</label>
+						<input type="checkbox" id="form-id-checkboxset-01-option-01" name="form-id-checkboxset-01" value="Foo" />
+					</li>
+					<li>
+						<label for="form-id-checkboxset-01-option-02">Bar</label>
+						<input type="checkbox" id="form-id-checkboxset-01-option-02" name="form-id-checkboxset-01" value="Bar" />
+					</li>
+					<li>
+						<label for="form-id-checkboxset-01-option-03">Baz</label>
+						<input type="checkbox" id="form-id-checkboxset-01-option-03" name="form-id-checkboxset-01" value="Baz" />
+					</li>
+				</ul>
+			</div>
+			
+			<!-- OptionsetField -->
+			<div class="field optionset">
+				<label for="form-id-optionset-01">Radio option Set</label>
+				
+				<ul id="form-id-optionset-01" class="optionset">
+					<li>
+						<label for="form-id-optionset-01-option-01">Foo</label>
+						<input type="radio" id="form-id-optionset-01-option-01" name="form-id-optionset-01" value="Foo" />
+					</li>
+					<li>
+						<label for="form-id-optionset-01-option-02">Bar</label>
+						<input type="radio" id="form-id-optionset-01-option-02" name="form-id-optionset-01" value="Bar" />
+					</li>
+					<li>
+						<label for="form-id-optionset-01-option-03">Baz</label>
+						<input type="radio" id="form-id-optionset-01-option-03" name="form-id-optionset-01" value="Baz" />
+					</li>
+				</ul>
+			</div>
+			
+			
+			<!-- FileField -->
+			<div class="field file">
+				<label for="form-id-file-01">Upload a file</label>
+				
+				<input type="file" />
+			</div>
+			
+			<!-- TextareaField -->
+			<div class="field textarea">
+				<label for="form-id-textarea-01">Textarea</label>
+				
+				<textarea></textarea>
+			</div>
+			
+		</fieldset>
+		
+		<div class="actions">
+			<input type="submit" value="Submit" />
+		</div>
+	</form>
+</body>
+</html>

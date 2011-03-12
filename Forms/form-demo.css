@@ -1,0 +1,14 @@
+/**
+ * Styles simply for the demo and not to influence the form
+ */
+html { 
+	font-family: Helvetica, Arial, sans-serif; font-size: 14px;
+}
+
+body { 
+	margin: 18px auto; width: 720px; 
+}
+
+code {
+	font-family: 'Bitstream Vera Sans Mono','Courier',monospace;
+}
