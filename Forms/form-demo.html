@@ -146,5 +146,118 @@
 			<input type="submit" value="Submit" />
 		</div>
 	</form>
+
+	<h2>Validation options</h2>
+	
+	<p>Out of the box no client side validation will be enabled. This allows developers a clean state for their web applications.
+		A jQuery Validate interface for form validation is available via the API but not enabled by default.</p>
+	
+	<h3>Notes</h3>
+	
+	<ul>
+		<li>When an error is detected on the server side a message is returned at the top of the form explaining only that there
+			is an error on the form (or validation mistake). This prevents the user not being able to see any error messages.</li>
+			
+		<li>Form field containers will gain the class <code>has-error</code> when a form has an error.</li>
+		
+	</ul>
+	
+	<form id="form-id-03">
+		<div class="form-message error">
+			<p>Please fill out all the required fields.</p>
+		</div>
+			
+		<fieldset>
+			<legend>Validation Options</legend>
+			
+			<div class="field text email has-error">
+				<label for="form-id-03-text-01">Email</label>
+				<input type="text" name="text-01" value="foo" id="form-id-03-text-01" />
+				
+				<span class="form-message validation">&#34;foo&#34; is not a valid email address.</span>
+			</div>
+
+			<!-- CheckboxField -->
+			<div class="field checkbox has-error">
+				<label for="form-id-03-checkbox-01">Checkbox</label>
+				<input type="checkbox" name="checkbox-01" id="form-id-03-checkbox-01" />
+				
+				<span class="form-message error">&#34;Checkbox&#34; is required.</span>
+			</div>
+
+			<!-- DropdownField -->
+			<div class="field select has-error">
+				<label for="form-id-03-select-02">Select box</label>
+				<select>
+					<optgroup label="Example">
+						<option>Foo</option>
+						<option>Bar</option>
+						<option>Baz</option>
+					</optgroup>
+
+					<optgroup label="Example Two">
+						<option>Foo</option>
+						<option>Bar</option>
+						<option>Baz</option>
+					</optgroup>
+				</select>
+				
+				<span class="form-message error">&#34;Select box&#34; is required.</span>	
+			</div>
+
+			<!-- CheckboxSetField -->
+			<div class="field checkboxset has-error">
+				<label for="form-id-03-checkboxset-01">Checkbox Set</label>
+
+				<ul id="form-id-03-checkboxset-01" class="optionset">
+					<li>
+						<label for="form-id-03-checkboxset-01-option-01">Foo</label>
+						<input type="checkbox" id="form-id-03-checkboxset-01-option-01" name="form-id-03-checkboxset-01" value="Foo" />
+					</li>
+					<li>
+						<label for="form-id-03-checkboxset-01-option-02">Bar</label>
+						<input type="checkbox" id="form-id-03-checkboxset-01-option-02" name="form-id-03-checkboxset-01" value="Bar" />
+					</li>
+					<li>
+						<label for="form-id-03-checkboxset-01-option-03">Baz</label>
+						<input type="checkbox" id="form-id-03-checkboxset-01-option-03" name="form-id-03-checkboxset-01" value="Baz" />
+					</li>
+				</ul>
+				
+				<span class="form-message error">&#34;Checkbox Set&#34; is required.</span>
+			</div>
+
+			<!-- OptionsetField -->
+			<div class="field optionset has-error">
+				<label for="form-id-03-optionset-01">Radio option Set</label>
+
+				<ul id="form-id-03-optionset-01" class="optionset">
+					<li>
+						<label for="form-id-03-optionset-01-option-01">Foo</label>
+						<input type="radio" id="form-id-03-optionset-01-option-01" name="form-id-03-optionset-01" value="Foo" />
+					</li>
+					<li>
+						<label for="form-id-03-optionset-01-option-02">Bar</label>
+						<input type="radio" id="form-id-03-optionset-01-option-02" name="form-id-03-optionset-01" value="Bar" />
+					</li>
+					<li>
+						<label for="form-id-03-optionset-01-option-03">Baz</label>
+						<input type="radio" id="form-id-03-optionset-01-option-03" name="form-id-03-optionset-01" value="Baz" />
+					</li>
+				</ul>
+				
+				<span class="form-message error">Please select at least two.</span>
+			</div>
+
+			<!-- TextareaField -->
+			<div class="field textarea has-error">
+				<label for="form-id-03-textarea-01">Textarea</label>
+
+				<textarea></textarea>
+				
+				<span class="form-message error">&#34;Textarea&#34; is required.</span>
+			</div>
+		</fieldset>
+	</form>
 </body>
 </html>
